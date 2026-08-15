@@ -22,6 +22,69 @@ Build the information layer silently before drafting. Gather and verify every co
 
 Then build the expression layer. Choose the tone from the activity type and publishing channel. Make time, venue, eligibility, deadline, and registration method easy to scan. Let the opening, transitions, and close carry only the degree of atmosphere the activity needs.
 
+## TIDE Club Default Context
+
+For TIDE Club requests, treat the following as the default organizational context. Use the organization name exactly as supplied in the current brief; when no form is supplied, use `TIDE Club`.
+
+- Present TIDE as a student-led, professor-guided community focused on data science and AI.
+- Emphasize real project practice, collaboration, and the path from understanding a problem through design and technical implementation to a reusable outcome when those ideas fit the request.
+- Preserve common technical terms such as `AI Agent`, `Workshop`, `Demo`, `RAG`, `Prompt`, and `Data Space` in English where that is how TIDE members would naturally use them. Explain a term briefly if the target audience may not know it.
+- Treat this organizational positioning as reusable context, not evidence for an individual project. Do not infer a partner, mentor, product, technology stack, outcome, quota, eligibility rule, or career benefit that the user has not supplied.
+
+## Choose a TIDE Email Archetype
+
+Classify a TIDE request before drafting. Use the relevant structure and tone below; preserve verified details over any template.
+
+### Project Recruitment or Project Portfolio
+
+Write with a practical, professional, project-manual feel. Open with a compact TIDE introduction, explain the value of real project work, and make the application route and deadline easy to find.
+
+- Use the order: title; TIDE introduction; recruitment note; application route and deadline; project overview; individual project sections; final reminder; signature and date if supplied.
+- Give each project the same fields when they are available: project name, tags, positioning or introduction, time, core tasks, places, suitable background, and application method.
+- Use a native overview table in a DOCX only when two or more projects share comparable fields. Keep fuller project descriptions as headings and paragraphs, not crowded table cells.
+- State the web application route, backup mailbox, and required email subject format only when supplied. If applicants should not reply to the email, say so directly only when that instruction is verified.
+
+### Operations Team Recruitment
+
+Write in a warmer, community-building voice while remaining specific about the work.
+
+- Use the order: bilingual title when requested; application link; salutation; invitation; TIDE introduction; responsibilities; desired qualities; what members may gain; interview process; interview arrangements; closing invitation; signature and date if supplied.
+- Explain the purpose of operations work instead of reducing it to errands. Connect it to community building, collaboration, event delivery, and concrete ownership where supported by the brief.
+- For a bilingual version, put complete Chinese copy first and a complete English version after it. Translate for natural student readability rather than sentence-by-sentence imitation.
+- Use emoji sparingly as section markers when the channel and tone are community-oriented. Do not use them as decoration in every section.
+
+### Activity Preview or Invitation
+
+Use a lighter invitation tone. Begin with a relevant question or scene when it genuinely creates interest, then explain why the activity is worth attending before the logistics.
+
+- Use the order: title; hook; activity introduction; highlights; suitable audience; time and venue; participation or registration method; deadline or capacity if supplied; welcome line.
+- Make the learning value, expert interaction, practical AI experience, or career exposure concrete only when the brief supports it.
+- Use a small number of natural emoji for suitable student-facing workshops, visits, and community events. Keep technical workshops clear rather than overly playful.
+
+### Research Project Recruitment
+
+Use the most formal and information-dense TIDE tone. Prioritize research value, institutional credibility, scope, and concrete eligibility.
+
+- Use the order: recruitment note; project background; partner institutions and mentors; research directions and tasks; skill requirements; target applicants and places; project nature and period; submission method; screening and interview arrangements.
+- Present named institutions, professors, external experts, research directions, technical skills, and submission requirements in full when supplied.
+- State only confirmed requirements for CVs, transcripts, email subjects, application materials, deadlines, and screening rules. Avoid emoji, exaggerated opportunity claims, and casual phrasing.
+
+### Venture-Style Technical Project Recruitment
+
+Use a focused, energetic, engineering-forward voice. Explain the opportunity, problem, product direction, and practical contribution without turning market speculation into a guaranteed outcome.
+
+- Use the order: hook or trend observation; supervisor if supplied; project introduction; problem and background; market or ecosystem context; future direction; urgency if verified; technical requirements; target applicants; joining method.
+- Keep engineering requirements concrete, including full-stack development, APIs, AI application development, deployment or operations, Docker, Kubernetes, Claude Code, Codex, or other tools only when supplied.
+- Use urgency only when it comes from the brief. Do not promise commercial success, market leadership, funding, titles, or career outcomes.
+
+## TIDE Information and Visual Language
+
+- Make the action route unmistakable. Place a verified registration link, application webpage, questionnaire, mailbox, QR-code instruction, or contact method near the end and repeat it only when a long recruitment email needs a final reminder.
+- Let the email type determine its density: project recruitment should feel structured and operational; operations recruitment should feel welcoming; activity invitations should lead with interest; research recruitment should feel rigorous; venture recruitment should feel decisive and grounded.
+- For TIDE Word documents or requested HTML emails, use a restrained technology-oriented hierarchy: deep navy or dark blue for primary headings, pale blue-grey for structured information areas, and white or dark-grey body text. Keep the result readable and do not introduce unverified branding assets or colors.
+- Use headings and short sections to improve scanability. Do not turn normal prose into a dense spreadsheet, and do not use a project table when the projects do not share enough comparable fields.
+- End with a specific next action and the TIDE Club signature. Add a date only when the user supplies it or explicitly asks to use the document date.
+
 ## Calibrate Tone by Activity Type
 
 - Treat "grounded" as fitting the real campus context, being easy for readers to understand, and being ready for organizers to use. Do not equate it with colloquial language or turn every deliverable into a group notice.
@@ -113,6 +176,18 @@ Check the following silently before presenting the result:
 - Confirm that warmth and atmosphere have not become overly literary.
 - Replace repeated words, stock connectors, mechanical contrasts, and visibly uniform sentence patterns. Preserve clarity after revising for variation.
 
+## Deliver as a Desktop Word Document
+
+Unless the user explicitly requests chat text only or another format, create the final copy as an editable `.docx` Word document rather than placing the complete draft in the chat.
+
+- Save one document per request to the current user's Desktop. Use a clear filename based on the activity name or deliverable type, such as `家·乐 House Concert 邀请邮件.docx`. If that filename already exists, add a date-time suffix instead of overwriting it.
+- Use the `documents` skill to create the DOCX. Apply a restrained, campus-appropriate visual hierarchy, then render and visually inspect the document before delivery.
+- Preserve the writing structure in the document: give the copy a clear title, distinguish multiple versions with headings, carry selective emphasis into Word bold formatting, and place `待确认` in a separate section at the end.
+- Do not put Markdown markers such as `**` into the DOCX. Translate them into native Word formatting.
+- For a revision of the same email copy or deliverable, edit the first DOCX created for it in place and keep its original filename. Do not create a second document or a revision copy unless the user explicitly asks for a separate version.
+- Identify that first DOCX from the conversation and prior file handoff. If its path is unavailable, search the Desktop for the named deliverable before asking the user. If more than one candidate remains, ask which file to revise; do not guess or create a new document.
+- In chat, provide only a concise handoff with the file link and a short note on the included deliverable; do not duplicate the full copy unless the user asks for it.
+
 ## Response Shape
 
-Start with the requested copy. Label multiple variants by purpose, such as `正式版` and `社群短讯版`, rather than explaining the writing process. After the copy, add a compact `待确认` list. Enumerate every missing item explicitly and completely; do not use vague catch-alls such as `XX等`, `其他信息`, `相关事项`, or equivalent wording. For articles and posts, include both missing facts required to publish and missing details that are non-essential but would materially improve the copy. Label every item in the latter group `非必要`; for a recap, this can include the performance program, on-site photos, audience interaction, or attendee feedback when unavailable.
+For a default DOCX delivery, place the requested copy in the document and return a concise file handoff. When the user explicitly requests chat text, start with the requested copy. Label multiple variants by purpose, such as `正式版` and `社群短讯版`, rather than explaining the writing process. After the copy, add a compact `待确认` list. Enumerate every missing item explicitly and completely; do not use vague catch-alls such as `XX等`, `其他信息`, `相关事项`, or equivalent wording. For articles and posts, include both missing facts required to publish and missing details that are non-essential but would materially improve the copy. Label every item in the latter group `非必要`; for a recap, this can include the performance program, on-site photos, audience interaction, or attendee feedback when unavailable.
