@@ -41,7 +41,7 @@ Write with a practical, professional, project-manual feel. Open with a compact T
 
 - Use the order: title; TIDE introduction; recruitment note; application route and deadline; project overview; individual project sections; final reminder; signature and date if supplied.
 - Give each project the same fields when they are available: project name, tags, positioning or introduction, time, core tasks, places, suitable background, and application method.
-- Use a native overview table in a DOCX only when two or more projects share comparable fields. Keep fuller project descriptions as headings and paragraphs, not crowded table cells.
+- Use a native overview table in a DOCX only when two or more projects share comparable fields. Follow it with one separate project table card per project; do not present a long sequence of headings and paragraphs as the only detailed view.
 - State the web application route, backup mailbox, and required email subject format only when supplied. If applicants should not reply to the email, say so directly only when that instruction is verified.
 
 ### Operations Team Recruitment
@@ -85,6 +85,17 @@ Use a focused, energetic, engineering-forward voice. Explain the opportunity, pr
 - Use headings and short sections to improve scanability. Do not turn normal prose into a dense spreadsheet, and do not use a project table when the projects do not share enough comparable fields.
 - End with a specific next action and the TIDE Club signature. Add a date only when the user supplies it or explicitly asks to use the document date.
 
+## Lay Out Multiple Projects or Tasks
+
+When a deliverable contains two or more projects or tasks, create one separate table card for each item. Do not stack full project descriptions in a long, visually uniform column.
+
+- In a DOCX or HTML deliverable, start each card with a distinct title band containing the project or task number, name, and only verified tags or labels. For TIDE materials, use the existing restrained deep-navy header and pale blue-grey information treatment.
+- Put the details below the title band in a compact label-value table. Use wide content cells for longer information and lighter label cells for scanability. Pair fields such as `项目定位` and `时间`, `核心任务` and `名额`, or `适合背景` and `联系/申请` only when those facts are supplied.
+- Keep each card internally consistent: use the same field order, column widths, label style, cell padding, and spacing across comparable projects. Leave clear vertical space between cards.
+- Do not force empty fields, invent values to fill a cell, or cram every sentence into a dense grid. Let long descriptions wrap naturally; move truly secondary details outside the table only when that materially improves reading.
+- An overview table may precede the cards for comparison, but it does not replace the separate detailed card for each project or task.
+- For Markdown-only chat output, use a heading and a small, readable table for each project or task when the content is sufficiently structured; otherwise use clearly separated mini-sections that preserve the same field order.
+
 ## Calibrate Tone by Activity Type
 
 - Treat "grounded" as fitting the real campus context, being easy for readers to understand, and being ready for organizers to use. Do not equate it with colloquial language or turn every deliverable into a group notice.
@@ -98,6 +109,7 @@ Use a focused, energetic, engineering-forward voice. Explain the opportunity, pr
 ## Present Information by Activity Context
 
 - Cover every confirmed key fact, while choosing a presentation that fits the activity and channel. Use emphasis to improve scanning, not to impose a fixed template.
+- Center the main title by default in DOCX, HTML email, and other rich-text deliverables. In Markdown-only chat output, use a level-one heading without adding HTML solely to force centering. Keep section headings, project-card titles, and body text left-aligned unless the requested layout calls for another treatment.
 - Deliver copy in Markdown by default. Use headings, bold text, and other standard Markdown structure to highlight high-value keywords such as the activity name, theme, speaker, main content, time, venue, or call to action when useful.
 - For formal contexts, especially academic lectures, formal invitations, and official ceremonies, place important details such as the speaker, time, and venue in a separate, clearly scannable block when that improves usability.
 - For recreational activities, performances, exhibitions, and other entertainment-oriented events, integrate key facts into the prose instead of creating a separate information list. Bold the time and venue when the channel supports Markdown or rich text.
